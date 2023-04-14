@@ -1,0 +1,53 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+
+@Leeda2
+HanCoding
+/
+board_exam_project
+Public
+Fork your own copy of HanCoding/board_exam_project
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+board_exam_project/src/main/resources/templates/message.html
+@HanCoding
+HanCoding 스프링부트 게시판 무작정 따라하기
+Latest commit 4f5dc6b on Nov 16, 2021
+History
+1 contributor
+23 lines (16 sloc)  331 Bytes
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script th:inline="javascript">
+
+    /*<![CDATA[*/
+
+    var message = [[${message}]];
+    alert(message);
+
+    location.replace([[${searchUrl}]]);
+
+    /*]]>*/
+</script>
+
+<body>
+
+</body>
+</html>

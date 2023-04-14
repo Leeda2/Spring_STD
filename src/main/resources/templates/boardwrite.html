@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 작성폼</title>
+</head>
+
+<style>
+    .layout{
+        width:500px;
+        margin : 0 auto;
+        marin-top:40px;
+
+    }
+    .layout >input {
+        width :100%;
+        box-sizing: boader-box;
+        margin-top:10px;
+
+    }
+
+
+</style>
+<body>
+<div class="layout">
+
+    <form action="/board/writepro" method="post" enctype="multipart/form-data">
+<!--     actioin : 어느 페이지 주소로 값을 넘겨 줄꺼냐 , method : 어느 방식으로 넘겨 줄거냐   -->
+<!--        file_upload : enctype="multipart/form-data-->
+
+        <input type="text" name="title"><br/>
+        <textarea name="content"></textarea><Br/>
+
+        <input type="file" name="file"><br/>
+        <button type="submit">작성</button>
+
+    </form>
+
+</div>
+</body>
+</html>
